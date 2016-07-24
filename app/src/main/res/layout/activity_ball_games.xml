@@ -26,7 +26,7 @@
             android:textAllCaps="true"
             android:gravity="center"
             android:textSize="24sp"
-            android:padding="16dp"
+            android:padding="10dp"
             android:textColor="#000000"
             />
 
@@ -41,16 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:background="@android:color/black"
-            />
-
-
-        //<TextView
-        />/    android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Time: "
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="15dp"
-            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
             />
 
         <LinearLayout
@@ -78,7 +69,8 @@
                 <Button
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="#FFDAB9"
+                    android:background="#666666"
+                    android:textColor="#ffffff"
                     android:text="+"
                     android:onClick="increment"
                     android:layout_margin="5dp"
@@ -90,12 +82,14 @@
                     android:text="0"
                     android:textSize="20sp"
                     android:layout_margin="5dp"
+                    android:id="@+id/hour_text_view"
                     />
 
                 <Button
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="#FFDAB9"
+                    android:background="#666666"
+                    android:textColor="#ffffff"
                     android:text="-"
                     android:onClick="decrement"
                     android:layout_margin="5dp"
@@ -121,9 +115,10 @@
                 <Button
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="#FFDAB9"
+                    android:background="#666666"
+                    android:textColor="#ffffff"
                     android:text="+"
-                    android:onClick="increment"
+                    android:onClick="increment2"
                     android:layout_margin="5dp"
                     />
 
@@ -133,14 +128,16 @@
                     android:text="0"
                     android:textSize="20sp"
                     android:layout_margin="5dp"
+                    android:id="@+id/minutes_text_view"
                     />
 
                 <Button
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="#FFDAB9"
+                    android:background="#666666"
                     android:text="-"
-                    android:onClick="decrement"
+                    android:textColor="#ffffff"
+                    android:onClick="decrement2"
                     android:layout_margin="5dp"
                     />
 
@@ -187,7 +184,7 @@
             <Button
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="#000000"
+                android:background="#119adf"
                 android:layout_margin="12dp"
                 />
 
@@ -203,7 +200,100 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/voleyball_"
+                android:src="@drawable/volleyball"
+                android:layout_margin="14dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#e5530b"
+                android:layout_margin="12dp"
+                />
+
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:text="Basketball"
+                android:textSize="32sp"
+                android:layout_margin="14dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basket"
+                android:layout_margin="14dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#f00000"
+                android:layout_margin="12dp"
+                />
+
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:text="Bowling"
+                android:textSize="32sp"
+                android:layout_margin="14dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bowling"
+                android:layout_margin="14dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#ffd700"
+                android:layout_margin="12dp"
+                />
+
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:text="Tennis"
+                android:textSize="32sp"
+                android:layout_margin="14dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tennis"
                 android:layout_margin="14dp"
                 />
 
